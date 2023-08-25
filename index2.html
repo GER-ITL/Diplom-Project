@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta data-safe="content-type" content="text/html; charset=utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online запись</title>
+    <style>
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            margin: 0 auto;
+            padding: 12px 16px;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .tBtn {
+            color: #E6E6FA;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+        
+        h1 {
+            margin: 0px;
+            color: #222;
+            font-size: 4rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #E6E6FA;
+            font-size: 23pt;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-weight: 100;
+        }
+        
+        h3 {
+            margin: 0px;
+            padding: 0px;
+            color: RoyalBlue;
+            font-size: 4rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .selectr {
+            color: #E6E6FA;
+            background-color: #222;
+            height: 50px;
+            width: 400px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+            text-align: center;
+            border: 1px #E6E6FA solid;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16pt;
+        }
+        
+        .select {
+            height: 400px;
+            width: 450px;
+            margin: 0 auto;
+            margin-top: 80px;
+            background-color: #222;
+            border-radius: 10%;
+            box-shadow: 2px 2px 25px #222;
+        }
+        
+        .btnZ {
+            display: block;
+            box-sizing: border-box;
+            padding: 0 25px;
+            margin: 0 auto;
+            margin-top: 10px;
+            outline: none;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid #4c51f9;
+            border-radius: 0 30px 0 30px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #222;
+            background-color: #E6E6FA;
+            box-shadow: 2px 2px 25px #222;
+            cursor: pointer;
+            user-select: none;
+            appearance: none;
+            touch-action: manipulation;
+            transition: box-shadow 0.2s;
+            font-weight: 100;
+            transition: all 0.2s;
+        }
+        
+        .btnZ:focus-visible {
+            border: 1px solid #4c51f9;
+            outline: none;
+        }
+        
+        .btnZ:hover {
+            transition: all 0.2s;
+            box-shadow: 0 7px 14px #4c51f9, 0 3px 6px rgb(0 0 0 / 8%);
+        }
+        
+        .btnZ:active {
+            background-color: #808080;
+        }
+        
+        .btnZ:disabled {
+            background-color: #eee;
+            border-color: #eee;
+            color: #444;
+            cursor: not-allowed;
+        }
+        
+        @media screen and (max-height:720px) {
+            h1,
+            h3 {
+                font-size: 300%;
+            }
+        }
+        
+        @media screen and (max-height:720px) {
+            h2 {
+                font-size: 150%;
+            }
+        }
+        
+        @media screen and (max-height:720px) {
+            .select {
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 450px;
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn"><i class="fa fa-home"><a class="tBtn" href="index.html">← На главную</a></i></button>
+    <div>
+        <h3>Online-запись</h3>
+        <h1> ZERKALO</h1>
+    </div>
+    <div class="select">
+        <h2>Выберите специалиста:</h2>
+        <select name="hall" class="selectr">
+    <option>Gonzalez D.K.</option>
+    <option>Johnson S.W.</option>
+    <option>Brown R.J.</option>
+  </select>
+        <h2>Выберите дату:</h2>
+        <input class="selectr" type='date' />
+        <h2>Выберите услугу:</h2>
+        <select name="hall" class="selectr">
+    <option>Стрижки и окрашивание</option>
+    <option>Окрашивание волос</option>
+    <option>Маникюр и педикюр</option>
+    <option>Брови и ресницы</option>
+    <option>Макияж</option>
+  </select>
+    </div>
+    <button type="submit" class="btnZ">Записаться</button>
+    <script src="./main.js"></script>
+</body>
+
+</html>
